@@ -1,5 +1,5 @@
 {% extends "mvp/base.html" %}
-{% block title %}Scan {{ session.uuid }} · OpenEASD{% endblock %}
+{% block title %}Scan {{ session.uuid }} · CSM{% endblock %}
 {% block content %}
 <p><a href="{% url 'mvp:domain-detail' session.domain %}">&larr; {{ session.domain }}</a></p>
 <h1>Scan · {{ session.domain }}</h1>

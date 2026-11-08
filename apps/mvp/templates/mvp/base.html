@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}OpenEASD{% endblock %}</title>
+  <title>{% block title %}CSM{% endblock %}</title>
   <link rel="stylesheet" href="{% static 'mvp/bulma.min.css' %}">
   <style>
     /* --- Project dark palette (matches the former React app: GitHub-dark chrome
@@ -86,8 +86,8 @@
 <body>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item has-text-weight-semibold" href="{% url 'mvp:dashboard' %}">OpenEASD</a>
-      <span class="navbar-item muted">external attack surface</span>
+      <a class="navbar-item has-text-weight-semibold" href="{% url 'mvp:dashboard' %}">CSM</a>
+      <span class="navbar-item muted">Continuous Security Manager</span>
     </div>
     {% if user.is_authenticated %}
     <div class="navbar-menu is-active">
